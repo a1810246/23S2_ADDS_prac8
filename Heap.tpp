@@ -63,7 +63,7 @@ void Heap<T>::insert(T value) {
 
   while(index > 0 && values[(index-1)/2] > values[index])
   {
-    std::swap(values[(index-1)/2], values[index])
+    std::swap(values[(index-1)/2], values[index]);
     index = (index-1)/2;
   }
 }
